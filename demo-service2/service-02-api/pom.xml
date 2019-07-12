@@ -18,6 +18,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <!-- docker 制作镜像使用的名称前缀（组名称） -->
+        <docker.image.prefix>spring-boot</docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -63,7 +65,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                    <imageName>spring-boot-docker-image/${project.artifactId}</imageName>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
