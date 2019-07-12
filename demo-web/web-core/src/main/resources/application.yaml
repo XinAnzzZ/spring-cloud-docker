@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.yuhangma.com
+  application:
+    name: service-web
+server:
+  port: 9000
+
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 5000

@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: service-01-api
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.yuhangma.com
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 5000

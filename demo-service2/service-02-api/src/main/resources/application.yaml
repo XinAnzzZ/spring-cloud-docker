@@ -1,0 +1,10 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: service-02-api
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.yuhangma.com
