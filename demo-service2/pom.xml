@@ -31,6 +31,7 @@
 
     <modules>
         <module>service-02-client</module>
+        <module>service-02-api</module>
     </modules>
 
     <dependencyManagement>
