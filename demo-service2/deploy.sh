@@ -5,6 +5,8 @@ WORK_PATH=$(dirname $(readlink -f $0));
 
 cd ${WORK_PATH}
 
+git pull origin master --rebase
+
 mvn clean install -Dmaven.test.skip
 
 # 停止并删除容器
