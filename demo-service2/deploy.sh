@@ -5,7 +5,7 @@ WORK_PATH=$(dirname $(readlink -f $0));
 
 cd ${WORK_PATH}
 
-git pull origin master --rebase
+git pull --rebase origin master
 
 mvn clean install -Dmaven.test.skip
 
