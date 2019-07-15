@@ -1,5 +1,5 @@
 server:
-  port: 9002
+  port: 9003
   tomcat:
     max-threads: 5
 spring:
@@ -9,5 +9,5 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: nacos.yuhangma.com
-        ip: 118.25.144.92
+        server-addr: 118.25.144.92:8848
+#        ip: how to use dynamic ip addr?

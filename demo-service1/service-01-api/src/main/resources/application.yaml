@@ -1,5 +1,7 @@
 server:
   port: 9001
+  tomcat:
+    max-threads: 5
 spring:
   application:
     name: service-01-api
@@ -7,7 +9,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: nacos.yuhangma.com
+        server-addr: 118.25.144.92:8848
 ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 5000
