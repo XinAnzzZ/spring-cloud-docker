@@ -10,3 +10,4 @@ spring:
     nacos:
       discovery:
         server-addr: nacos.yuhangma.com
+        ip: 118.25.144.92
